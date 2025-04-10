@@ -27,10 +27,13 @@ function App() {
     }
 
     return (
-        <>
-            <button onClick={() => getJoke('random')}>Click to generate a Random Chuck Norris Joke</button>
-            <p>Or chose a joke from category below</p>
-            <select onChange={(event) => getJoke(`random?category=${event.target.value}`)}>
+        <div className="App">
+            <h1 className="text-5xl font-bold uppercase text-yellow-400">Random Chuck Norris Joke Generator</h1>
+
+            <button className="bg-gray-900 rounded border-gray-500 px-2 py-1" onClick={() => getJoke('random')}>Generate Joke</button>
+
+            <label htmlFor="categories">Or chose a joke from category</label>
+            <select id="categories" className="text-gray-900 rounded border px-2 py-1" onChange={(event) => getJoke(`random?category=${event.target.value}`)}>
                 <option>Select a category</option>
                 <>
                     {categories.map((category, index) => {
@@ -38,8 +41,9 @@ function App() {
                     })}
                 </>
             </select>
+
             <p>{joke}</p>
-        </>
+        </div>
     )
 }
 
