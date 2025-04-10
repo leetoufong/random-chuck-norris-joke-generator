@@ -1,6 +1,13 @@
 # random-chuck-norris-joke-generator
 
-Just attempting to relearn Typscript as well as doing something fun with generating random Chuck Norris jokes in a Vite+React framework. Get Chucked!!!
+Just attempting to relearn Typscript as well as doing something fun with generating random Chuck Norris jokes in React+Vite. Get Chucked!!!
+
+## Tech Stack
+
+- React
+- Typescript
+- Vite
+- Tailwind
 
 ## Running the App
 
